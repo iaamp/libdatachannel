@@ -444,6 +444,8 @@ write_basic_package_version_file(
 install(FILES ${CMAKE_BINARY_DIR}/LibDataChannelConfigVersion.cmake
 	DESTINATION lib/cmake/LibDataChannel)
 
+include(cmake/LibDataChannelCPack.cmake)
+
 # Tests
 if(NOT NO_TESTS)
 	if(CMAKE_SYSTEM_NAME STREQUAL "WindowsStore")
